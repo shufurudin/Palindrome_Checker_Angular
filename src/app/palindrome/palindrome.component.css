@@ -1,0 +1,38 @@
+* {
+    font-family: 'Syne Mono', monospace;
+    height: 21px;
+  }
+  input {
+    position: relative;
+    background-color: aqua;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2px;
+    z-index: 1;
+  }
+  input:focus {
+    outline: none;
+  }
+  p {
+    text-align: center;
+  }
+  .shadow {
+    position: relative;
+    top: -19px;
+    -webkit-box-reflect: below -5px linear-gradient(to bottom, transparent, gray);
+    z-index: 0;
+    transition: 1.5s;
+  }
+  .palindrome {
+    color: gold;
+  }
+
+  @media screen and (min-width: 500px) {
+    p {
+      font-size: 1.1rem;
+    }
+    input {
+      font-size: 1.1rem;
+    }
+  }

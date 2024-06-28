@@ -1,0 +1,29 @@
+div {
+    position: relative;
+    height: 20px;
+    margin-top: 15px;
+    color: transparent;
+    transition: 5s;
+}
+#show {
+    color: black;
+}
+#showp {
+    color: gold;
+    text-shadow: 0px 0px 5px rgba(85, 81, 57, 0.4);
+}
+p {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 300px;
+    font-family: 'Syne Mono', monospace;
+    color: transparent;
+    transition: 5s;
+}
+
+@media screen and (min-width: 500px) {
+    p {
+        font-size: 1.1rem;
+    }
+}

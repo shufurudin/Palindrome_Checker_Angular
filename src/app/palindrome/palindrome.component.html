@@ -1,0 +1,5 @@
+<label for="palindrome">
+    <p>Digit your word</p>
+    <input size="{{charNum}}" name="palindrome" id="palindrome" [(ngModel)]="userWord" (input)="palindrometer(userWord)" autocomplete="off" maxlength="{{charNum}}" appAutofocus>
+</label>
+<p class="shadow {{Palindrome}}">{{userWord.split("").reverse().join("")}}</p>

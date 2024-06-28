@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+
+div#cntr {
+    display: flex;
+    flex-direction: column;
+}
+div#grad {
+    height: 100vh;
+    width: calc(50% - 225px);
+}
+div.left {
+    background: linear-gradient(to left, aqua, blue 5%);
+}
+div.right {
+    background: linear-gradient(to right, aqua, blue 5%);
+}
+
+div#bkg {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}
+
+app-root {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    max-width: 450px;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 430px) {
+    app-root {
+        height: 370px;
+    }
+}
+@media screen and (min-width: 451px) {
+    div#bkg {
+        width: 450px;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
